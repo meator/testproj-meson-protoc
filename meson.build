@@ -19,7 +19,7 @@ proto_outputs = custom_target(
   input: 'key_type.proto',
   output: ['key_type.pb.cc', 'key_type.pb.h'],
 )
-sources += proto_outputs[0]
+sources += proto_outputs
 
 static_library(
   'mylib',
